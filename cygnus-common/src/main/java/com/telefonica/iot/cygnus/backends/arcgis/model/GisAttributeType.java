@@ -27,7 +27,7 @@ import com.telefonica.iot.cygnus.backends.arcgis.exceptions.ArcgisException;
 public enum GisAttributeType {
 
     DATE("Date"), INTEGER("Integer"), NUMBER("Number"), BOOLEAN("Boolean"), STRING("String"), OID(
-            "OBJECTID"), GID("GlobalID"), GEOMETRY("Geometry");
+            "OBJECTID"), GID("GlobalID"), GEOMETRY("Geometry"), ESRIFIELDTYPESTRING("esriFieldTypeString"), ESRIFIELDTYPEDATE("esriFieldTypeDate");
 
     private String strValue;
 
