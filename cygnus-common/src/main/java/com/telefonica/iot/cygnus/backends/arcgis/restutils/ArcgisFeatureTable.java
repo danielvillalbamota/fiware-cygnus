@@ -346,7 +346,9 @@ public class ArcgisFeatureTable {
         if (hasAttribute(uniqueField)) {
             String uniqueFieldType = getAttributeType(uniqueField);
             quoted = GisAttributeType.DATE.equals(uniqueFieldType)
-                    || GisAttributeType.STRING.equals(uniqueFieldType);
+                    || GisAttributeType.STRING.equals(uniqueFieldType)
+                    || GisAttributeType.ESRIFIELDTYPESTRING.equals(uniqueFieldType)
+                    || GisAttributeType.ESRIFIELDTYPEDATE.equals(uniqueFieldType);
 
             // Make the list
             for (Feature feature : featureArray) {
